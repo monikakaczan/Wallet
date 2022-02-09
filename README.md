@@ -1,25 +1,25 @@
-#Wallet App
+# Wallet App
 A monetary wallet that holds the current balance for a player.
 
-##How to run
+## How to run
 Navigate to the Wallet repository and run `mvn clean install`, next `mvn spring-boot:run`
 
-##Endpoints
-###CREDIT
+## Endpoints
+### CREDIT
 `POST "/account/credit"` - accepts RequestBody that consists of `amount` and `userId`
 <br/>
 
 
-###DEBIT
+### DEBIT
 `POST "/account/debit"` - accepts RequestBody that consists of `amount` and `userId`
 <br/>
 
-###ACCOUNT BALANCE
+### ACCOUNT BALANCE
 `GET "/account/{userId}/balance"` - accepts PathVariable `userId`
 <br/>
 
 
-###ACCOUNT TRANSACTION HISTORY
+### ACCOUNT TRANSACTION HISTORY
 `GET "/account/{userId}/history"` - accepts PathVariable `userId` 
 <br/>
 
